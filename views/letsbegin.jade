@@ -1,0 +1,31 @@
+include ../includes/head.jade
+	div.page-header
+		h1 Magic Paper <small>Get your number</small>
+	div#message_container
+		div#steps
+			| This includes 3 very simple steps
+		div#step1_tit
+			| Step 1:
+		div#step1
+			| First Think of any two digit number (between 10-99)
+		div#step1_ex
+			| Example 25
+		div#step2_tit
+			| Step 2:
+		div#step2
+			| Sum your two digits
+		div#step2_ex
+			| 2 + 5 = 7
+		div#step3_tit
+			| Step 3:
+		div#step3
+			| Substract answer with your whole number and get your new number
+		div#step3_ex
+			| 25-7 = <span class="final_num">18</span>
+		div#final_msg
+			| Now continue to the next page with your <b>New Final Number</b>
+	div#handlers
+		span.cancel.btn.btn-default.btn-lg
+			| Leave sadly :(
+		span.continue_next.symbols_page.btn.btn-primary.btn-lg
+			| Get into Magic Paper!!

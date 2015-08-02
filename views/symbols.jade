@@ -1,0 +1,27 @@
+include ../includes/head.jade
+  div.page-header
+    h1 Magic Paper <small>Get your symbol</small>
+  div.container
+    div.jumbotron.main_cont
+      p Now! Just find out equivalent symbol for your final number and click continue
+    - var ix=0
+    - var clear_class=""
+    div.row
+    for each_symbol in symbols_json
+        - ix++
+        if ix%7==0
+          - clear_class = "clearfix"
+        div(class="col-sm-3 col-md-2 text-center #{clear_class} main_cont")
+          span.thumbnail
+            span(class="#{each_symbol.symbol} symbol_#{ix}")
+            span.caption
+              label(class="label_#{ix}") #{ix}: <span>#{each_symbol.name}<span>
+    div#final_handler
+      span.toletsbegin.btn.btn-default.btn-lg.pull-right
+        | Go to Home Page
+      span.continue_next.final_page.btn.btn-primary.btn-lg(data-target="#gridSystemModal" data-toggle="modal" style="margin-right:15px")
+        | Continue
+    div.clearfix
+    br
+    br
+    include ../includes/dialog.html

@@ -1,0 +1,79 @@
+ #home_message{
+    border: 1px solid #ccc;
+    position: absolute;
+    padding: 20px;
+    line-height: 40px;
+    font-size: 25px;
+    box-shadow: 5px 5px 10px 3px #ccc;
+    top: 28%;
+    left: 22%;
+}
+#page_h1 {
+	top: 23%;
+	left: 22%;
+	position: absolute;
+}
+.continue_next,.cancel {
+	border: 1px solid #eee;
+	font-size: 14px;
+	padding: 0px 30px;
+	box-shadow: 2px 2px #ccc;
+	float: right;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.continue_next:hover,.cancel:hover{
+	text-decoration: underline;
+  color: rgb(87, 160, 236);
+}
+.error_404 {
+  position: absolute;
+  top: 30%;
+  left: 27%;
+  padding: 5px 20px;
+  box-shadow: 3px 3px 5px #ddd;
+}
+#message_container {
+  font-size: 24px;
+  padding: 20px 40px;
+  position: absolute;
+  top: 120px;
+  left: 20%;
+  border: 1px solid #ccc;
+  box-shadow: 3px 2px 3px #ccc;
+  line-height: 27px;
+}
+#steps {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+#step1_tit,#step2_tit,#step3_tit {
+    font-size: 26px;
+}
+#step1_ex,#step2_ex,#step3_ex {
+    font-size: 20px;
+    color: #898989;
+}
+#step1,#step2,#step3,#step1_ex,#step2_ex,#step3_ex {
+  margin: 10px 20px;
+}
+#handlers {
+  position: absolute;
+  top:580px;
+  left: 736px;
+}
+#handlers .continue_next,#handlers .cancel{
+  padding: 15px 20px;
+  font-size: 16px;
+}
+.glyphicon {
+  font-size: 8em;
+}
+.page-header h1{
+  padding: 0 95px;
+}
+#final_handler {
+  position: relative;
+  float: right;
+  margin-right: 18px;
+}
